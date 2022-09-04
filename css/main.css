@@ -1,0 +1,129 @@
+/*Generales */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+/* Principal */
+.principal {
+  display: flex;
+  max-width: 768px;
+  min-width: 375px;
+}
+
+/* Columna*/
+
+.columna {
+  color: white;
+  padding: 2.5rem;
+}
+
+.columna:first-of-type {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.columna:last-of-type {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.titulo {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 35px;
+}
+
+.texto {
+  font-size: 15px;
+  margin-bottom: 4.5rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.enlace {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 15px;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.sedans .enlace {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+}
+
+.sedans .enlace:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: solid 2px hsl(0, 0%, 95%);
+}
+
+.suvs .enlace {
+  color: hsl(184, 100%, 22%);
+}
+
+.suvs .enlace:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: solid 2px hsl(0, 0%, 95%);
+}
+
+.luxury .enlace {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury .enlace:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: solid 2px hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 700px) {
+  .principal {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 25rem;
+    padding: 4.5rem;
+  }
+
+  .texto {
+    overflow-wrap: break-word;
+    font-size: 16px;
+  }
+  .columna:first-of-type {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .columna:last-of-type {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  
+}
